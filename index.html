@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form id="login-form" class="hidden">
+      <span>Hello, what's your name?</span>
+      <input type="text" required maxlength="15" />
+      <input type="submit" value="Log In" />
+    </form>
+    <section class="main hidden">
+      <div id="weather">
+        <div>
+          <img />
+          <span id="weather_temp"></span>
+        </div>
+        <span id="weather_info"></span>
+      </div>
+      <h2 id="clock"></h2>
+      <h1 id="greeting"></h1>
+      <form id="main-focus__form">
+        <span>What is your main focus for today?</span>
+        <input type="text" required />
+      </form>
+      <div id="main-focus__text" class="hidden">
+        <input type="checkbox" id="main-focus" />
+        <label for="main-focus"></label>
+        <span></span>
+        <i class="fas fa-edit"></i>
+      </div>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+      <button class="todo_button">Todo</button>
+      <div class="todo_list">
+        <div class="todo-list__menu">
+          <span
+            >Done
+            <button><i class="fas fa-chevron-down"></i></button>
+          </span>
+          <button><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+        <ul></ul>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/main-focus.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>

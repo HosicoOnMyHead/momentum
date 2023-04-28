@@ -1,0 +1,45 @@
+#main-focus__form span {
+    font-size: 30px;
+  }
+  
+#main-focus__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    position: relative;
+}
+
+#main-focus__text input{
+    display: none;
+}
+
+#main-focus__text input + label{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #bcbcbc;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+#main-focus__text input:checked + label:after{
+    position: absolute;
+    font-size: 24px;
+    content: "✔";
+    top: 2px;
+}
+
+#main-focus__text input:checked + label + span{
+    text-decoration: line-through;
+}
+
+#main-focus__text span{
+    margin-right: 10px;
+}
+
+#main-focus__text i{
+    font-size: 20px;
+    cursor: pointer;
+}

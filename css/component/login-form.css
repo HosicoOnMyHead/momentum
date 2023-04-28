@@ -1,0 +1,26 @@
+#login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#login-form span {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#login-form input:nth-child(2) {
+  font-size: 30px;
+  border-width: 0 0 2px;
+  border-color: white;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#login-form input:last-child {
+  font-size: 30px;
+  border-width: 0;
+  background-color: transparent;
+  color: white;
+}

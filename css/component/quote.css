@@ -1,0 +1,28 @@
+#quote {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #quote span:first-child {
+    position: fixed;
+    bottom: 20px;
+  }
+  
+  #quote span:last-child {
+    opacity: 0;
+    position: fixed;
+    bottom: 20px;
+    font-size: 13px;
+  }
+  
+  #quote span:first-child:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s;
+  }
+  
+  #quote span:first-child:hover + span {
+    animation: fadein 0.5s forwards;
+  }
