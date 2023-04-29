@@ -4,12 +4,12 @@ const focusDiv = document.getElementById("main-focus__text");
 const focusSpan = focusDiv.querySelector("span");
 const editBtn = focusDiv.querySelector("i");
 
-const MAINTODOS_KEY = "main_focus";
+const MAINFOCUS_KEY = "main_focus";
 
-function handleSubmit(event) {
+function handleFocusSubmit(event) {
     event.preventDefault();
     const newFocus = focusInput.value;
-    localStorage.setItem(MAINTODOS_KEY, newFocus);
+    localStorage.setItem(MAINFOCUS_KEY, newFocus);
     paintFocus(newFocus);
 }
 
@@ -19,19 +19,18 @@ function paintFocus(newFocus){
     focusForm.className = "hidden";
 }
 
-focusForm.addEventListener("submit", handleSubmit);
-
-const savedFocus = localStorage.getItem(MAINTODOS_KEY);
+const savedFocus = localStorage.getItem(MAINFOCUS_KEY);
 
 if(savedFocus !== null){
     paintFocus(savedFocus);
 }
 
-function handleClick(){
+function handleCheckClick(){
     const checkbox = focusDiv.querySelector("input");
     checkbox.checked = false;
     focusDiv.className = "hidden";
     focusForm.classList.remove("hidden");
 }
 
-editBtn.onclick = handleClick;
+focusForm.addEventListener("submit", handleFocusSubmit);
+editBtn.onclick = handleCheckClick;

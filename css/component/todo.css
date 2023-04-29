@@ -1,4 +1,4 @@
-.todo_button {
+#todo_button {
     position: fixed;
     bottom: 20px;
     right: 10px;
@@ -6,13 +6,15 @@
     opacity: 0.8;
     border-width: 0;
     background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
   }
   
-.todo_button:hover {
+#todo_button:hover {
     opacity: 1;
 }
 
-.todo_list {
+#todo_list {
     position:fixed;
     bottom: 50px;
     right: 5px;
@@ -20,32 +22,23 @@
     width: 300px;
     border-radius: 5px;
     background-color: white;
+    padding: 10px;
 }
 
-.todo-list::after {
-    content: "";
-    position:fixed;
-    bottom: 45px;
-    right: 20px;
-    border-top: 10px solid white;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 0px solid transparent;
+#todo{
+    background-color: transparent;
+    height: 20px;
+    width: 100%;
+    border: none;
+    font-size: 18px;
 }
 
-.todo-list__menu {
-    color: rgba(0,0,0,0.8);
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
+ul li{
+    font-size: 15px;
 }
 
-.todo-list__menu span {
-    display: flex;
-    align-items: center;
-}
-
-.todo-list__menu span i {
-    margin-left:10px;
-    font-size: 10px;
+li button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }

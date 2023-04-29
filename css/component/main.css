@@ -6,17 +6,19 @@
 }
 
 #clock {
+  color: white;
   font-weight: 400;
   font-size: 150px;
   margin-bottom: 20px;
 }
 
 #greeting {
+  color: white;
   font-size: 50px;
   margin-bottom: 50px;
 }
 
-.main input {
+.main input:not(#todo) {
   font-size: 30px;
   border-width: 0 0 2px;
   border-color: white;

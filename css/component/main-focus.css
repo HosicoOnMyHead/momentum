@@ -1,8 +1,10 @@
 #main-focus__form span {
+    color: white;
     font-size: 30px;
   }
   
 #main-focus__text {
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +13,7 @@
 }
 
 #main-focus__text input{
-    display: none;
+    display: none !important;
 }
 
 #main-focus__text input + label{

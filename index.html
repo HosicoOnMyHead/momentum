@@ -43,15 +43,12 @@
         <span></span>
         <span></span>
       </div>
-      <button class="todo_button">Todo</button>
-      <div class="todo_list">
-        <div class="todo-list__menu">
-          <span
-            >Done
-            <button><i class="fas fa-chevron-down"></i></button>
-          </span>
-          <button><i class="fas fa-ellipsis-h"></i></button>
-        </div>
+      <button id="todo_button">Todo</button>
+      <div id="todo_list" class="hidden">
+        <form id="todo_form">
+          <input type="text" id="todo" placeholder="New Todo" />
+        </form>
+        <hr />
         <ul></ul>
       </div>
     </section>
@@ -69,7 +66,8 @@
     <script src="js/quote.js"></script>
     <script src="js/background.js"></script>
     <script src="js/main-focus.js"></script>
-    <script src="js/weather.js"></script>
     <script type="text/javascript" src="apikey.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/todo.js"></script>
   </body>
 </html>
